@@ -59,10 +59,10 @@ def scrape_facts():
 def scrape_hemisperes():
 
     hemisphere_image_urls = [
-        {"title": "Valles Marineris Hemisphere", "img_url": ""},
-        {"title": "Cerberus Hemisphere", "img_url": ""},
-        {"title": "Schiaparelli Hemisphere", "img_url": ""},
-        {"title": "Syrtis Major Hemisphere", "img_url": ""}
+        {"title": "Valles Marineris Hemisphere", "img_url": "https://astropedia.astrogeology.usgs.gov/download/Mars/Viking/valles_marineris_enhanced.tif/full.jpg"},
+        {"title": "Cerberus Hemisphere", "img_url": "https://astropedia.astrogeology.usgs.gov/download/Mars/Viking/cerberus_enhanced.tif/full.jpg"},
+        {"title": "Schiaparelli Hemisphere", "img_url": "https://astropedia.astrogeology.usgs.gov/download/Mars/Viking/schiaparelli_enhanced.tif/full.jpg"},
+        {"title": "Syrtis Major Hemisphere", "img_url": "https://astropedia.astrogeology.usgs.gov/download/Mars/Viking/syrtis_major_enhanced.tif/full.jpg"}
     ]
 
     hemispere = {
