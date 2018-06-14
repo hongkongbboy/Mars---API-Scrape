@@ -10,8 +10,9 @@ def init_browser():
     executable_path = {'executable_path': 'chromedriver.exe'}
     return Browser("chrome", **executable_path, headless=False)
 
-# NASA Mars News - functions to scrape for Mars
+# NASA Mars News - functions to scrape for Mars (received errors here)
 def scrape_news():
+    news={}
     browser = init_browser()
     url = 'https://mars.nasa.gov/news/'
     browser.visit(url)
@@ -30,7 +31,9 @@ def scrape_news():
 # Mars Weather
 def scrape_weather():
 
+    weather = {}
     tweeter_url = 'https://twitter.com/marswxreport?lang=en'
+    browser = init_browser()
     browser.visit(tweeter_url)
     weather_html = browser.html
     weather_soup = BeautifulSoup(weather_html, 'html.parser')
